@@ -1,6 +1,11 @@
 sudo apt install curl
 sudo apt isntall wget
 
+#install my config files
+cp .bashrc ~/.bashrc
+cp .bash_alias ~/.bash_alias
+cp .vimrc ~/.vimrc
+
 #install pip3
 sudo apt install python3-pip
 
@@ -60,11 +65,6 @@ sudo apt install pwntools
 #install binwalk
 sudo apt install binwalk
 
-#install my config files
-cd $HOME
-cp .bashrc ~/.bashrc
-cp .bash_alias ~/.bash_alias
-cp .vimrc ~/.vimrc
 
-source .bashrc
-source .bash_alias
+source ~/.bashrc
+source ~/.bash_alias
