@@ -12,13 +12,17 @@ sudo apt install python3-pip
 # install dein
 cd $HOME
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > ~/Downloads/dein_installer.sh
-sh ./~/Downloads/dein_installer.sh ./~/.cache/dein
+chmod u+x ~/Downloads/dein_installer.sh
+sh ./~/Downloads/dein_installer.sh ~/.cache/dein
 
 #install colorscheme
 cd $HOME
 mkdir .vim
 cd .vim
+rm color_scheme
+rm colors
 mkdir color_scheme
+mkdir colors
 cd color_scheme
 
 git clone https://github.com/smallwat3r/vim-hashpunk-sw.git
