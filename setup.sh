@@ -6,6 +6,9 @@ cp .bashrc ~/.bashrc
 cp .bash_alias ~/.bash_alias
 cp .vimrc ~/.vimrc
 
+#install vim
+sudo apt install vim
+
 #install pip3
 sudo apt install python3-pip
 
