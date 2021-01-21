@@ -3,7 +3,7 @@ sudo apt isntall wget
 
 #install my config files
 cp .bashrc ~/.bashrc
-cp .bash_alias ~/.bash_alias
+cp .bash_aliases ~/.bash_aliases
 cp .vimrc ~/.vimrc
 
 #install vim
