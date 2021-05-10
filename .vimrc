@@ -8,6 +8,7 @@ if dein#load_state('~/.cache/dein')
   call dein#begin('~/.cache/dein')
 
   call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('neoclide/coc.nvim', { 'merged': 0, 'rev': 'master', 'build': 'yarn install --frozen-lockfile' })
   call dein#add('Shougo/deoplete.nvim')
   call dein#add('smallwat3r/vim-hashpunk-sw')
   if !has('nvim')
