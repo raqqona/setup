@@ -1,0 +1,4 @@
+alias chrome='google-chrome'
+alias cd='cdls'
+alias mkdir='mkcd'
+alias shutdown='shutdown -h now'
