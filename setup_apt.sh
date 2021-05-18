@@ -2,6 +2,8 @@ SHELL = $1
 
 sudo apt install curl
 sudo apt isntall wget
+sudo apt install openssh-server
+sudo apt install vim
 
 #install my config files
 cp .$SHELLrc ~/.$SHELLrc
@@ -15,7 +17,7 @@ sudo apt install python3-pip
 cd $HOME
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > ~/Downloads/dein_installer.sh
 chmod u+x ~/Downloads/dein_installer.sh
-./~/Downloads/dein_installer.sh ~/.cache/dein
+$SHELL ~/Downloads/dein_installer.sh ~/.cache/dein
 
 #install colorscheme
 cd $HOME
@@ -29,6 +31,13 @@ cd color_scheme
 
 git clone https://github.com/smallwat3r/vim-hashpunk-sw.git
 cp vim-hashpunk-sw/colors/hashpunk-sw-sweet.vim ~/.vim/colors
+
+#install npm
+sudo apt install node.js
+sudo apt install npm
+
+#install yarn
+sudo npm install -g yarn
 
 #install JDK
 cd $HOME/Downloads

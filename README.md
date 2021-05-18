@@ -4,9 +4,14 @@
 <hr>
 <li>curl</li>
 <li>wget</li>
+<li>ssh-server</li>
+<li>vim</li>
 <li>dein</li>
 <li>vim colorscheme hashpunk-sw-sweet</li>
 <li>pip3</li>
+<li>node.js</li>
+<li>npm</li>
+<li>yarn</li>
 <li>jdk-11.0.2</li>
 <li>ghidra</li>
 <li>GDB-peda</li>
