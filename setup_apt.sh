@@ -10,6 +10,13 @@ cp .$SHELLrc ~/.$SHELLrc
 cp .$SHELL_aliases ~/.$SHELL_aliases
 cp .vimrc ~/.vimrc
 
+sudo apt purge lacales
+sudo apt purge language-pack-ja
+sudo apt install lavales
+sudo apt install language-pack-ja
+sudo locale-gen
+echo "export LANG=ja_JP.UTF-8" >> ~/.$SHELLrc
+
 #install pip3
 sudo apt install python3-pip
 
@@ -58,7 +65,9 @@ git clone https://github.com/longid/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
 
 #install radare2
-sudo apt install radare2
+git clone https://github.com/radareorg/radare2
+su -
+./radare2/sys/install.sh
 
 #install rp++
 cd $HOME
