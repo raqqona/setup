@@ -55,8 +55,8 @@ sudo mv jdk-11.0.2 /opt/java/
 
 #install Ghidra
 cd $HOME/Downloads
-wget https://ghidra-sre.org/ghidra_9.2_PUBLIC-20201113.zip
-unzip ghidra_9.2_PUBLIC-20201113.zip
+zip https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.0.1_build/ghidra_10.0.1_PUBLIC_20210708.zip
+unzip ghidra_10.0.1_PUBLIC-202110708.zip
 
 #install GDB-peda
 cd $HOME
