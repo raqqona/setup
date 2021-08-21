@@ -42,9 +42,12 @@ cp vim-hashpunk-sw/colors/hashpunk-sw-sweet.vim ~/.vim/colors
 #install npm
 sudo apt install node.js
 sudo apt install npm
+sudo npm install -g n
+sudo n latest
 
 #install yarn
 sudo npm install -g yarn
+sudo yarn insatll
 
 #install JDK
 cd $HOME/Downloads
