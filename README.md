@@ -1,22 +1,41 @@
-<h2>#setup</h2>
-<br>
-<h3>install list</h3>
-<hr>
-<li>curl</li>
-<li>wget</li>
-<li>ssh-server</li>
-<li>vim</li>
-<li>dein</li>
-<li>vim colorscheme hashpunk-sw-sweet</li>
-<li>pip3</li>
-<li>node.js</li>
-<li>npm</li>
-<li>yarn</li>
-<li>jdk-11.0.2</li>
-<li>ghidra</li>
-<li>GDB-peda</li>
-<li>radare2</li>
-<li>rp++</li>
-<li>checksec.sh</li>
-<li>socat</li>
-<li>pwntools</li>
+## setup
+### How To
+ you need to exceute with two arguments.first, shell kind and second, option command
+ #### option command
+ * -minimum
+ * -default
+ * -ctf
+ * -max
+
+### install list
+---
+-minimum
+* curl
+* wget
+* ssh-server
+* pip3
+
+-default
+* curl
+* wget
+* ssh-server
+* pip3
+* vim
+* dein
+* vim colorscheme hashpunk-sw-sweet
+* node.js
+* npm
+* yarn
+
+-ctf
+* jdk-11.0.2
+* ghidra_10.0.4
+* GDB-peda
+* radare2
+* rp++
+* checksec
+* socat
+* pwntools
+    
+-max
+* all
