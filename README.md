@@ -7,6 +7,10 @@
  * -ctf
  * -max
 
+ ```
+ $./setup_apt.sh bash -ctf
+ ```
+
 ### install list
 ---
 -minimum
