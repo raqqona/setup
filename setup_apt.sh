@@ -1,5 +1,9 @@
-SHELL = $1
-OPT = $2
+SHELL=$1
+OPT=$2
+MINIMUM="-minimum"
+DEFAULT="-default"
+CTF="-ctf"
+MAX="-max"
 
 if [ -n $SHELL ] && [ -n $OPT ]; then
     echo "shell: ${SHELL}"
@@ -9,7 +13,7 @@ else
 fi
 
 
-if [$OPT = "-minimum"] || [$OPT = "-default"] || [$OPT = "-ctf"] || [$OPT = "-max"]; then
+if [ "$OPT" = "$MINIMUM" ] || [ "$OPT" = "DEFAULT" ] || [ "$OPT" = "CTF" ] || [ "$OPT" = "MAX" ]; then
     sudo apt -y install curl
     sudo apt -y isntall wget
     sudo apt -y install openssh-server
@@ -32,7 +36,7 @@ if [$OPT = "-minimum"] || [$OPT = "-default"] || [$OPT = "-ctf"] || [$OPT = "-ma
     sudo apt -y install python3-pip
 fi
 
-if [$OPT = "-default"] || [$OPT = "-max"]; then
+if [ "$OPT" = "$DEFAULT" ] || [ "$OPT" = "MAX" ]; then
     # install dein
     cd $HOME
     curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > ~/Downloads/dein_installer.sh
@@ -61,7 +65,7 @@ if [$OPT = "-default"] || [$OPT = "-max"]; then
     sudo npm install -g yarn
 fi
 
-if [$OPT = "-ctf"] || [$OPT = "-max"]; then
+if [ "$OPT" = "CTF" ] || [ "$OPT" = "MAX" ]; then
     #install JDK_11.0.2
     cd $HOME/Downloads
     wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
@@ -101,5 +105,5 @@ if [$OPT = "-ctf"] || [$OPT = "-max"]; then
     sudo apt -y install binwalk
 fi
 
-source ~/.$SHELLrc
-source ~/.$SHELL_aliases
+source ~/.${SHELL}rc
+source ~/.${SHELL}_aliases
